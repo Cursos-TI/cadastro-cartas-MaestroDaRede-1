@@ -6,10 +6,10 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-  char ncarta[3];
-  char estado = 'A'; 'B'; 'C'; 'D'; 'E'; 'F'; 'G'; 'H';
-  char cdc[5] = "01"; "02"; "03"; "04"; "05"
-  char nome_cidade[20];
+  char ncarta[30];
+  char estado;
+  char cdc[30];
+  char nome_cidade[30];
   int populacao;
   float area;
   float pib;
@@ -26,12 +26,12 @@ int main() {
     scanf("%*c");
 
   printf("Digite o nome da Cidade:\n");
-    fgets(nome_cidade, 20, stdin);
+    fgets(nome_cidade, 30, stdin);
 
   printf("Digite a população da Cidade:\n");
     scanf("%d", &populacao);
 
-  printf("Digite a área da cidade:\n")
+  printf("Digite a área da cidade:\n");
     scanf("%f", &area);
 
   printf("Digite o Produto Interno Bruto (PIB) da cidade:\n");
@@ -43,9 +43,9 @@ int main() {
 
   printf("O número da carta criada é: %s\n", ncarta);
   printf("A letra inicial do Estado é: %c\n", estado);
-  printf("O código da carta é: %s%c\n", estado, cdc);
+  printf("O código da carta é: %c%s\n", estado, cdc);
   printf("O nome da cidade é: %s\n", nome_cidade);
-  printf("A popopulação total da cidade é: %d\n", populacao);
+  printf("A população total da cidade é: %d\n", populacao);
   printf("A área total da cidade é: %.2f\n", area);
   printf("O PIB da cidade é: %.2f\n", pib);
   printf("O número de pontos turisticos presentes na cidade é: %d\n", NPT);
