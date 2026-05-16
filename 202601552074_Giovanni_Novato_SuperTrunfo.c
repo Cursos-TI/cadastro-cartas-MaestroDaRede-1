@@ -2,6 +2,8 @@
 
 int main() {
 
+
+//Área de definição das Variáveis
     char ncarta[3];
     char ncarta2[3];
     char Estado;
@@ -18,6 +20,8 @@ int main() {
     float PIB2;
     int NPT;
     int NPT2;
+
+//Área de entrada de dados
 
     printf("Digite o numero da carta que sera criada: \n");
     scanf("%s", ncarta);
@@ -70,6 +74,8 @@ printf("Prosseguindo para o cadastro da carta 2:\n \n");
 
     printf("Digite o numero de pontos turisticos da cidade: \n");
     scanf("%d", &NPT2);
+
+//Área de Saida de dados 
 
 printf("Carta 1:\n \n");
    printf("Carta: %s\n", ncarta);
